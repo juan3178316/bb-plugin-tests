@@ -6,7 +6,7 @@ const manifestName = "Pack name";
 const manifestDescription = "Pack description";
 const manifestVersion = "Pack version";
 const minEngineVersion = "Min engine version";
-const manifestAuthors = "your-name, Juan3178";
+const manifestAuthors = "your_name, Juan3178";
 
 try {
 
