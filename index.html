@@ -8,28 +8,30 @@
 		<meta name="theme-color" content="#006DFC"/>
 		<link rel="icon" href="assets/img/icon.svg" type="image/x-icon"/>
 		<link rel="apple-touch-icon" href="assets/img/icon.svg"/>
+		<link rel="stylesheet" href="src/styles_0x1.css"/>
 	</head>
 	<body>
+		<script src="src/scripts_0x1.js"></script>
 		<h1 align="center">Blockbench search plugins tests</h1>
 		</br>
 		</br>
-		<div>
+		<div class="choose-plugin">
 			<p>Chose the blockbench plugin that your want test in remote mode:</p>
 			<select name="Blockbench plugin test available" id="bb-plugin-test">
 				<option value="null">Chose the plugin test</option>
 				<optgroup label="Test remote">
 					<option value="itemblend">Itemblend | Addons creator</option>
 				</optgroup>
-				<optgroup label="testing">
+				<optgroup label="Testing">
 					<option value="bug_folder">Bug folder</option>
 				</optgroup>
 			</select>
 		</div>
 		<div id="url-generated"></div>
 		<div class="button-order">
-			<button type="submit" onclick="alert('test the web')">Generate URL</button>
-			<button type="reset" onclick="alert('refresh the page, please')">refresh page</button>
-			<button type="button" onclick="(function () { var script = document.createElement('script'); script.src='//cdn.jsdelivr.net/npm/eruda'; document.body.appendChild(script); script.onload = function () { eruda.init() } })(); console.log('debug mode enabled')">Debug page (Android chrome)</button>
+			<button type="button" onclick="generateBBURL()">Generate URL</button>
+			<button type="button" onclick="alert('refresh the page, please')">refresh page</button>
+			<button type="button" onclick="generateConsole('//cdn.jsdelivr.net/npm/eruda')">Debug page (Android chrome)</button>
 		</div>
 	</body>
 </html>
