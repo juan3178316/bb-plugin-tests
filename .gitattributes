@@ -1,11 +1,11 @@
 # Markdown
 *.md linguist-detectable=true
-*.md linguist-documentation=true
+*.md linguist-documentation=false
 
 # JSON
 *.json linguist-detectable=true
-*.json linguist-documentation=true
+*.json linguist-documentation=false
 
 # YAML
 *.yml linguist-detectable=true
-*.yml linguist-documentation=true
+*.yml linguist-documentation=false
